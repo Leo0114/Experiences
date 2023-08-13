@@ -20,7 +20,7 @@ const Nav = () => {
   ];
   return (
     <div className="absolute w-full flex justify-between p-4 items-center">
-      <h1 className="text-2xl font-bold z-20">Experiences</h1>
+      <h1 className="text-2xl font-bold z-20 text-slate-50">Experiences</h1>
       <Menu onToggleNav={handleNav} />
       <div
         className={
