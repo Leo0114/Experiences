@@ -5,6 +5,7 @@ import Nav from "@components/Nav";
 import Offers from "@components/Offers.astro";
 import Plan from "@components/Plan.astro";
 import Rooms from "@components/Rooms.astro";
+import ImageSlider from "@components/ImageSlider";
 
 const { title, seoDesc, seoTitle } = Astro.props;
 ---
@@ -12,14 +13,13 @@ const { title, seoDesc, seoTitle } = Astro.props;
 <!DOCTYPE html>
 <html lang="en">
   <MainHead />
-  <body
-    class="bg-slate-200 text-slate-800  "
-  >
+  <body class="bg-slate-200 text-slate-800">
     <Nav client:load />
     <Hero />
     <Offers />
     <Plan />
     <Rooms />
+    <ImageSlider client:load />
     <slot />
     <script is:inline>
       const theme = (() => {
