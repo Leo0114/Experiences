@@ -39,11 +39,11 @@ export default function ImageSlider() {
   };
 
   return (
-    <div className="max-w-[1400px]  h-[580px] w-full m-auto  px-4 py-16 relative  ">
+    <div className="max-w-[1400px]  h-[580px] w-full m-auto  px-4 py-10 relative group">
       <div
         loading="lazy"
         alt={slides[currentIndex].title}
-        className=" w-full h-full rounded-2xl bg-center bg-cover  transition-all  duration-500"
+        className=" w-full h-full rounded-2xl bg-center bg-cover  transition-all  duration-500 border border-slate-400 drop-shadow-xl shadow-xl"
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
       ></div>
       <div className="absolute top-[50%] -translate-x-0 translate-y-[-50%]  left-5 text-2xl rounded-full p-2 group-hover:bg-black/20 text-white cursor-pointer bg-slate-900/40">
