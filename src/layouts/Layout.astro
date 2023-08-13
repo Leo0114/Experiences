@@ -6,6 +6,7 @@ import Offers from "@components/Offers.astro";
 import Plan from "@components/Plan.astro";
 import Rooms from "@components/Rooms.astro";
 import ImageSlider from "@components/ImageSlider";
+import Footer from "@components/Footer.astro";
 
 const { title, seoDesc, seoTitle } = Astro.props;
 ---
@@ -20,6 +21,7 @@ const { title, seoDesc, seoTitle } = Astro.props;
     <Plan />
     <Rooms />
     <ImageSlider client:load />
+    <Footer />
     <slot />
     <script is:inline>
       const theme = (() => {
