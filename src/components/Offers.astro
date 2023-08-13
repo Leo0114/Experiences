@@ -1,0 +1,16 @@
+---
+const items = [
+  { title: "Bookin Incentives" },
+  { title: "Competitive Rates" },
+  { title: "Book With Flexibility" },
+  { title: "Trip Ensurance" },
+];
+---
+
+<div class="max-w-[900px] m-auto px-4 py-12 flex flex-wrap justify-between">
+  {
+    items.map((item) => (
+      <p class=" text-lg font-bold text-slate-700"> {item.title}</p>
+    ))
+  }
+</div>

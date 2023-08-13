@@ -2,6 +2,7 @@
 import MainHead from "@layouts/MainHead.astro";
 import Hero from "@components/layout/Hero.astro";
 import Nav from "@components/Nav";
+import Offers from "@components/Offers.astro";
 
 const { title, seoDesc, seoTitle } = Astro.props;
 ---
@@ -14,6 +15,7 @@ const { title, seoDesc, seoTitle } = Astro.props;
   >
     <Nav client:load />
     <Hero />
+    <Offers />
     <slot />
     <script is:inline>
       const theme = (() => {
