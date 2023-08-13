@@ -1,0 +1,14 @@
+---
+import { SEO } from "astro-seo";
+const {
+  seoTitle = "Experiences Private Beaches",
+  seoDesc = "Pagina Web sobre viaje a playas privadas",
+} = Astro.props;
+---
+
+<head>
+  <SEO title={seoTitle} description={seoDesc} />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="icon" type="image/svg+xml" href="/Experiences/port.svg" />
+</head>
