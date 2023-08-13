@@ -11,6 +11,13 @@ const Nav = () => {
       document.body.style.overflow = "scroll";
     }
   };
+  const items = [
+    { title: "Home" },
+    { title: "Destino" },
+    { title: "Reservaciones" },
+    { title: "Amenidades" },
+    { title: "Habitaciones" },
+  ];
   return (
     <div className="absolute w-full flex justify-between p-4 items-center">
       <h1 className="text-2xl font-bold z-20">Experiences</h1>
@@ -23,11 +30,9 @@ const Nav = () => {
         }
       >
         <ul className="flex flex-col fixed  w-full h-full items-center justify-center">
-          <li className=" font-bold text-3xl p-8">Home</li>
-          <li className=" font-bold text-3xl p-8">Desntino</li>
-          <li className=" font-bold text-3xl p-8">Reservaciones</li>
-          <li className=" font-bold text-3xl p-8">Amenidades</li>
-          <li className=" font-bold text-3xl p-8">Habitaciones</li>
+          {items.map((item) => (
+            <li className="font-bold text-3xl p-8">{item.title}</li>
+          ))}
         </ul>
       </div>
     </div>
