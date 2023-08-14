@@ -1,0 +1,77 @@
+---
+const Solutions = [
+  { title: "Travel" },
+  { title: "Booking" },
+  { title: "Flights" },
+  { title: "Cruises" },
+  { title: "Ground" },
+];
+const Support = [
+  { title: "Pricing" },
+  { title: "Documentation" },
+  { title: "Tours" },
+  { title: "Refounds" },
+];
+const Company = [
+  { title: "About" },
+  { title: "Blog" },
+  { title: "Jobs" },
+  { title: "Press" },
+  { title: "Partners" },
+];
+const Legal = [
+  { title: "Claims" },
+  { title: "Privacy" },
+  { title: "Terms" },
+  { title: "Policies" },
+  { title: "Conditions" },
+];
+
+import Bottom from "@components/layout/Bottom.astro";
+---
+
+<footer class="w-full mt-24 bg-slate-900 text-slate-300 py-2 px-2">
+  <div
+    class="max-w-[1400px] mx-auto grid grid-cols-2 md:grid-cols-6 border-b-2 border-s-slate-600 py-8 px-4"
+  >
+    <div>
+      <h6 class="font-bold uppercase pt-2">Solutions</h6>
+      <ul>
+        {Solutions.map((solution) => <li class=" py-1">{solution.title}</li>)}
+      </ul>
+    </div>
+    <div>
+      <h6 class="font-bold uppercase pt-2">Support</h6>
+      <ul>
+        {Support.map((supp) => <li class=" py-1">{supp.title}</li>)}
+      </ul>
+    </div>
+    <div>
+      <h6 class="font-bold uppercase pt-2">Company</h6>
+      <ul>
+        {Company.map((company) => <li class=" py-1">{company.title}</li>)}
+      </ul>
+    </div>
+    <div>
+      <h6 class="font-bold uppercase pt-2">Legal</h6>
+      <ul>
+        {Legal.map((legal) => <li class=" py-1">{legal.title}</li>)}
+      </ul>
+    </div>
+    <div class="col-span-2 py-8 md:pt-2">
+      <p class="font-bold uppercase">Susbscribe to our newsletters</p>
+      <p class="py-4">
+        The Latest deals, articles and resources sent to your inbox weekly
+      </p>
+      <form action="" class="flex flex-col sm:flex-row">
+        <input class=" w-full p-2 mr-4 rounded-lg mb-4" type="email" placeholder="Enter email..." />
+        <button
+          class="p-2 mb-4 rounded-md px-3 border border-slate-200 hover:drop-shadow-xl"
+        >
+          Susbscribe</button
+        >
+      </form>
+    </div>
+  </div>
+  <Bottom />
+</footer>
